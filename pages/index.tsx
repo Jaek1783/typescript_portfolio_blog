@@ -1,14 +1,14 @@
-import Link from 'next/link';
-const Home = ()=>{
+import Hero from "../components/hero";
+import { Fragment } from "react";
+const HomePage = ()=>{
+    //자기소개
+    //사용가능 기술
+    //프로젝트
     return(
-        <div>
-            <h1>Home Page</h1>
-            {/* <ul>
-                <li><Link href="https://github.com/jaek1783" target='_blank' >깃허브 바로가기</Link></li>
-                <li><Link href="https://blog.naver.com/wormsbrother" target='_blank' >블로그 바로가기</Link></li>
-            </ul> */}
-        </div>
+        <Fragment>
+            <Hero></Hero>
+        </Fragment>
     )
 }
 
-export default Home;
+export default HomePage;
