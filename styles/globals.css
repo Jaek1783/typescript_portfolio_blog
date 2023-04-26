@@ -7,3 +7,12 @@ body{
     background-color: #454545;
     color:#fff;
 }
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+li{
+    list-style-type: none;
+}
