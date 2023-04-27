@@ -1,8 +1,13 @@
+import AllPosts from "../../components/All-Posts/all-posts";
+import MyContext from "../../store/context";
+import { useContext } from "react";
 const AllPostsPage = ()=>{
+    const data = useContext(MyContext);
+    console.log(data);
     return(
-        <div>
-            <h1>All Posts Page</h1>
-        </div>
+        <section>
+            <AllPosts projects = {data}/>
+        </section>
     )
 }
 

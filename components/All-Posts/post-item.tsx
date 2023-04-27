@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from './project.module.css';
+import style from './posts.module.css';
 import Button from "../layout/Button";
 
 const ProjectItem = (props:any)=>{
@@ -14,8 +14,8 @@ const ProjectItem = (props:any)=>{
                     <dd>{desc}</dd>
                 </dl>
             </dd>
+            <dd><Button title={title}/></dd>
         </dl>
-        <Button title={title}/>
         </li>
 }
 
