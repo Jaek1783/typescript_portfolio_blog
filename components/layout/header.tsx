@@ -5,6 +5,7 @@ const NavigationPage = (props : any)=>{
         <header className={styles.header}>
             <h1 className={styles.logo}><Link href="/">Portfolio</Link></h1>
             <div className={styles.link}>
+                <span>바로가기</span>
                 <ul>
                     <li><Link href="https://blog.naver.com/wormsbrother" target="_blank">blog</Link></li>
                     <li><Link href="https://github.com/jaek1783" target="_blank">github</Link></li>

@@ -1,6 +1,9 @@
 .header{
+    width:100%;
     padding:1rem 0;
     background-color: #4e4e4f;
+    position: fixed;
+    z-index: 999;
 }
 .logo{
     float:left;
@@ -8,6 +11,11 @@
 }
 .link{
     float:right;
+    display: flex;
+}
+
+.link span{
+    padding-right: 10px;
 }
 
 .link li{

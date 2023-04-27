@@ -16,3 +16,7 @@ a{
 li{
     list-style-type: none;
 }
+
+section{
+    padding:5rem 0;
+}

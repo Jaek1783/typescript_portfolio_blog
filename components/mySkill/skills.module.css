@@ -1,0 +1,43 @@
+.container{
+    width:100%;
+    background-color: #959595;
+}
+.box{
+    width:39%;
+    margin : 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+.item{
+    display: inline-block;
+    margin : 0.5rem;
+    box-shadow: 3px 3px 5px 3px #5a5a5a;
+    overflow: hidden;
+}
+.item div{
+    padding:1rem;
+    transition: all .3s;
+}
+.item div>span{
+    width:100%;
+    display: none;
+    text-align: center;
+}
+
+/* hover */
+.item:hover div{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.701);
+}
+.item:hover div>p{
+    opacity: 0;
+}
+.item:hover div>span{
+    display: block;
+    position: absolute;
+    top:1rem;
+    left:0;
+}
+.item:hover img{
+    opacity: 0.3;
+}
