@@ -1,0 +1,32 @@
+.container{
+    width:58%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.card{
+    width:15rem;
+    border : 1px solid #000;
+    border-radius: 1rem;
+    background-color: #939393;
+    margin:1rem;
+    padding:1rem 0;
+}
+.text{
+    border-top : 1px solid #000;
+    color:#000;
+    padding:1rem;
+    margin-top:1rem;
+}
+
+.btn{
+    background-color:#f0dd30;
+    border:none;
+    border-radius: 10px;
+    padding:10px;
+    font-size: 1.5rem;
+    color:#000;
+}
+.btn:hover{
+    cursor: pointer;
+}
