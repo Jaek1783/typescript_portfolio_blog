@@ -4,10 +4,11 @@ import Button from "../layout/Button";
 
 const ProjectItem = (props:any)=>{
     const {title, desc, image } = props.projects;
+    const imagePath = `/images/posts/${title}/${image}`;
 
     return <li className={style.card}>
         <dl>
-            <dt><Image src={image} alt={title} width={220} height={150}/></dt>
+            <dt><Image src={imagePath} alt={title} width={220} height={150}/></dt>
             <dd className={style.text}>
                 <dl>
                     <dt>{title}</dt>

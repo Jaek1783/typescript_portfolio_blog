@@ -3,9 +3,10 @@
     background-color: #959595;
 }
 .box{
-    width:39%;
+    /* width:39%; */
     margin : 0 auto;
     display:flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .item{

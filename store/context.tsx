@@ -15,7 +15,8 @@ const MyContext = createContext<ProjectList | null >(null);
 export default MyContext;
 
 export const Projects : projectType[] = [
-        {id : 1, title : 'project01', desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', image : '/images/project/hard.png'},
-        {id : 2, title : 'project02', desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', image : '/images/project/salad.png'},
-        {id : 3, title : 'project03', desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', image : '/images/project/javascript.gif'},
+        {id : 1, title : 'web-publishing-project', desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', image : 'hard.png'},
+        {id : 2, title : 'javascript-project', desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', image : 'javascript.gif'},
+        {id : 3, title : 'react-project', desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', image : 'salad.png'},
+        
     ];

@@ -1,0 +1,33 @@
+.container{
+    width:80%;
+    height:80vh;
+    background-color: #afa9a2;
+    color:#000;
+    margin:0 auto;
+    padding:2rem;
+}
+.box{
+    border-bottom: 1px solid #000;;
+}
+.image{
+    border:1px dotted #000;
+    background-color: #3e3e3e;
+}
+.date{
+    text-align: right;
+    padding:1rem;
+}
+.text{
+    padding:1rem;
+}
+
+.text>dt{
+    font-size:2rem;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom:2rem;
+}
+
+.text>dd{
+    text-align: left;
+}
