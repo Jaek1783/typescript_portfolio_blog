@@ -1,0 +1,53 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact>h2{
+        position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0,0,0,0);
+}
+.formbox{
+    background-color: #757575;
+    padding:1rem;
+    box-shadow: 3px 3px 8px 3px #242424;
+}
+
+.formbox>p{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+.control, .textbox{
+    display:flex;
+    flex-wrap: wrap;
+    padding:.5rem;
+}
+
+.control>label, .textbox>label{
+    width:100%;
+    text-align: left;
+}
+.control>input,.textbox>textarea{
+    padding:.5rem;
+    width:100%;
+}
+.textbox>textarea{
+    height:20rem;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+}
