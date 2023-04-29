@@ -1,14 +1,15 @@
 .btn{
-    background-color:#f0dd30;
+    background-color: #585858;
     border:none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding:10px;
     font-size: 1.5rem;
-    color:#000;
+    /* color:#000; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin:1rem;
+    box-shadow: 1px 1px 5px 1px #2e2e2e;
 }
 .btn:hover{
     cursor: pointer;

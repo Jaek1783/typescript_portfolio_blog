@@ -1,6 +1,16 @@
+.pageName{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0,0,0,0);
+}
+
 .container{
     width:80%;
-    height:80vh;
     background-color: #afa9a2;
     color:#000;
     margin:0 auto;
@@ -9,10 +19,16 @@
 .box{
     border-bottom: 1px solid #000;;
 }
+.designTitle{
+    font-size: 6rem;
+    font-weight:bold;
+    border-bottom:3px dotted #000;
+}
 .image{
     border:1px dotted #000;
     background-color: #3e3e3e;
     padding:1rem;
+    margin-top: 1rem;
 }
 .date{
     text-align: right;
@@ -38,5 +54,18 @@
 .desc{
     padding-top:1rem;
     text-align: left;
-    line-height: 2rem;
+    line-height: 1rem;
+}
+
+.address{
+    font-weight:bold;
+    text-align: left;
+    font-size: large;
+}
+
+.back{
+    text-align: left;
+}
+.back:hover{
+    cursor: pointer;
 }

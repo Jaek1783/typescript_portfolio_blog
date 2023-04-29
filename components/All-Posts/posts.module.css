@@ -1,18 +1,17 @@
-.container{
-    padding-top:3rem
-}
+/* .container{
+    display: flex;
+    flex-direction: column-reverse;
+} */
 .card{
     background-color:#959595;
-    margin:2rem;
+    margin:1rem;
     padding:2rem;
-    border-radius: 1rem;
-    
+    box-shadow: 5px 5px 8px 5px #2e2e2e;
 }
 .card>dl{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
