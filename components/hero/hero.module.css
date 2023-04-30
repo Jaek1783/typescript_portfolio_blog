@@ -3,7 +3,9 @@
   margin:0 auto;
 }
 .me>img {
-   --s: 180px; /*image size */
+  /* width:auto;
+  height:auto; */
+   --s: 180px; /* image size */
   --b: 5px; /* border thickness */
   --c: #f0dd30; /* border color */
   --cb: #656565; /* background color */

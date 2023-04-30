@@ -4,6 +4,7 @@
     text-align: center;
 }
 body{
+    min-width: 680px;
     background-color: #454545;
     color:#fff;
 }

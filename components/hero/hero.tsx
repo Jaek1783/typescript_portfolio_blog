@@ -5,7 +5,7 @@ const Hero = ()=>{
         <section className={style.intro}>
             <div className={style.box}>
                 <div className={style.me}>
-                    <Image src="/images/me.png" alt="me"width={200} height ={300} />
+                    <Image src="/images/me.png" alt="me"width={250} height ={300} priority={true}/>
                 </div>
                 <h1>私の名前はChoi_Jaekeunです。</h1>
                 <p>frontend develoment</p>

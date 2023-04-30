@@ -15,7 +15,7 @@ const Form = ()=>{
             name : nameValue,
             desc : descValue
         }
-        axios.post('/api/contact',body).then((response:any) => console.log(response) );
+        axios.post('/api/contact',body).then((response:any) => response );
         setEmailValue('');
         setNameValue('');
         setDescValue('');
