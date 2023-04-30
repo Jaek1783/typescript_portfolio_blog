@@ -1,14 +1,28 @@
 import style from './form-style.module.css';
 import btnStlye from '../layout/btn.module.css';
 import {useState} from 'react';
+import axios from 'axios';
 const Form = ()=>{
     const [emailValue, setEmailValue] = useState('');
     const [nameValue, setNameValue] = useState('');
     const [descValue, setDescValue] = useState('');
-    console.log(emailValue);
+    // console.log(emailValue);
+
+    const sendMessageHandler = (event : any)=>{
+        event.preventDefault();
+        const body = {
+            email : emailValue,
+            name : nameValue,
+            desc : descValue
+        }
+        axios.post('/api/contact',body).then((response:any) => console.log(response) );
+        setEmailValue('');
+        setNameValue('');
+        setDescValue('');
+    }
     return <div className={style.formbox}>
         <p>Do you want contact me ?</p>
-            <form className={style.form}>
+            <form className={style.form} onSubmit={sendMessageHandler}>
                     <div className={style.controls}>
                         <div className={style.control}>
                             <label htmlFor="email">Your Email</label>
