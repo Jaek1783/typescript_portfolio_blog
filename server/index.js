@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const PORT = 4000;
 
 const db = require('./dbConfig');
-
+console.log(process.env.DB_HOST);
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
