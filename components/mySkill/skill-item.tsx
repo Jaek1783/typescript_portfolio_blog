@@ -7,8 +7,8 @@ const {title, image } = props;
     return <li className={styles.item}>
                 <div>
                 <p>hover please!</p>
-                  <Image 
-                  src={image} 
+                  <img 
+                  src={`/images/skills/${image}`} 
                   alt={title} 
                   width={80} 
                   height={80} 
