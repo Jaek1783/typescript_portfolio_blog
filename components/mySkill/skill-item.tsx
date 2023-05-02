@@ -8,7 +8,7 @@ const imagePath = `/images/skills/${image}`;
     return <li className={styles.item}>
                 <div>
                 <p>hover please!</p>
-                  <Image src={image} alt={title} width={80} height={80}/>
+                  <Image src='/images/skills/html5.png' alt={title} width={80} height={80}/>
                   <span>{title}</span>
                 </div>
     </li>
