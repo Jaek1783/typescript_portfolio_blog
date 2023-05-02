@@ -1,9 +1,9 @@
 [
-    {"id": 1, "title" : "html5", "image":"html5.png"},
-    {"id": 2, "title" : "css3", "image":"html5.png"},
-    {"id": 3, "title" : "javascript", "image":"html5.png"},
-    {"id": 4, "title" : "typescript", "image":"html5.png"},
-    {"id": 5, "title" : "react", "image":"html5.png"},
-    {"id": 6, "title" : "nextjs", "image":"html5.png"},
-    {"id": 7, "title" : "mysql", "image":"html5.png"}
+    {"id": 1, "title" : "html5", "image":"/images/skills/html5.png"},
+    {"id": 2, "title" : "css3", "image":"/images/skills/html5.png"},
+    {"id": 3, "title" : "javascript", "image":"/images/skills/html5.png"},
+    {"id": 4, "title" : "typescript", "image":"/images/skills/html5.png"},
+    {"id": 5, "title" : "react", "image":"/images/skills/html5.png"},
+    {"id": 6, "title" : "nextjs", "image":"/images/skills/html5.png"},
+    {"id": 7, "title" : "mysql", "image":"/images/skills/html5.png"}
 ]
