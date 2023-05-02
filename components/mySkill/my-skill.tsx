@@ -1,9 +1,11 @@
 import SkillGrid from "./skill-grid";
 import styles from './skills.module.css';
+
+import html from '/public/images/skills/html5.png';
 const MySkillList = (props : any)=>{
     const skills : {title : string, image : string}[ 
     ] = [
-        {title : 'html5', image :  '/images/skills/html5.png'},
+        {title : 'html5', image : `${html}`},
         {title : 'CSS3', image :  '/images/skills/css3.png'},
         {title : 'Javascript', image :  '/images/skills/javascript.png'},
         {title : 'Typescript', image :  '/images/skills/typescript.png'},
