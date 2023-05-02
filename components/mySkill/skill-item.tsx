@@ -8,7 +8,7 @@ const {title} = props;
                 <div>
                 <p>hover please!</p>
                   <Image 
-                  src={`/images/skills/${title}.png`} 
+                  src={`./images/skills/${title}.png`} 
                   alt={title} 
                   width={80} 
                   height={80} 
