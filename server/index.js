@@ -23,10 +23,7 @@ app.use('/',(req,res)=>{
   const email = req.body.email;
   const name = req.body.name;
   const desc = req.body.desc;
-  // db.query('SELECT * FROM contact', function (error, results) {
-  //     if (error) throw error;
-  //     res.send(results);
-  //   });
+
   db.query(`insert into contact(user_email,user_name,user_desc) 
   value (?,?,?)`,
   [email, name, desc], 
