@@ -6,7 +6,6 @@ const Form = ()=>{
     const [emailValue, setEmailValue] = useState('');
     const [nameValue, setNameValue] = useState('');
     const [descValue, setDescValue] = useState('');
-    // console.log(emailValue);
 
     const sendMessageHandler = (event : any)=>{
         event.preventDefault();
