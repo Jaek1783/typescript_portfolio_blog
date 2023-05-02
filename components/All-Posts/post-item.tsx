@@ -7,7 +7,7 @@ const ProjectItem = (props:any)=>{
     const imagePath = `/images/posts/${title}/${image}`;
     return <li className={style.card}>
         <dl>
-            <dt><img src={imagePath} alt={title} width={220} height={150}/></dt>
+            <dt><Image src={imagePath} alt={title} width={220} height={150}/></dt>
             <dd className={style.text}>
                 <dl>
                     <dt>{title}</dt>

@@ -11,10 +11,23 @@ const TitleDetail = (props : any)=>{
 // 화살표 이미지 출처 : <a href="https://www.flaticon.com/kr/free-icons/-" title="곡선 화살표 아이콘">곡선 화살표 아이콘  제작자: Freepik - Flaticon</a>
     return<dl className={style.container}>
             <dt>
-                <p className={style.back} onClick={()=>router.back()}><Image src="/images/icon/Arrow.png" alt="arrow" width={15} height={15}/>돌아가기</p>
+                <p className={style.back} onClick={()=>router.back()}>
+                    <Image 
+                    src="/images/icon/arrow.png" 
+                    alt="arrow" 
+                    width={15} 
+                    height={15}
+                />돌아가기</p>
                     <dl className={style.box}>
                         <dt className={style.designTitle}>PORTFOLIO</dt>
-                            <dd className={style.image}><Image src={imagePath} alt={title} width={500} height={250}/></dd>
+                            <dd className={style.image}>
+                                <Image 
+                                src={imagePath} 
+                                alt={title} 
+                                width={500} 
+                                height={250}
+                                />
+                            </dd>
                             <dd>
                                 <dl className={style.title}>
                                     <dt>{title}</dt>
