@@ -14,7 +14,7 @@ const handler = (req : any,res : any)=>{
 
     res.status(200).json({message: 'succsess'});
 
-    axios.post('http://localhost:4000', newMessage)
+    axios.post('http://13.211.158.195:4000', newMessage)
 .then((response:any)=>response.data)
     }
 }
