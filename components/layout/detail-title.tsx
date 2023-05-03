@@ -21,12 +21,12 @@ const TitleDetail = (props : any)=>{
                     <dl className={style.box}>
                         <dt className={style.designTitle}>PORTFOLIO</dt>
                             <dd className={style.image}>
-                                <Image 
+                                {/* <Image 
                                 src={imagePath} 
                                 alt={title} 
                                 width={500} 
                                 height={250}
-                                />
+                                /> */}
                             </dd>
                             <dd>
                                 <dl className={style.title}>
