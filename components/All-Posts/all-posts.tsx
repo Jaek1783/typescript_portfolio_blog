@@ -1,4 +1,4 @@
-import PostsItem from '../All-Posts/post-item';
+import PostsItem from './post-item';
 import style from './posts.module.css';
 const AllPosts = (props : any)=>{
 

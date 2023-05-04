@@ -1,5 +1,5 @@
-import TitleDetail from "../../components/layout/detail-title";
-import style from '../../components/layout/detail.module.css';
+import DetailPage from "../../components/detail/detail-page";
+import style from '../../components/detail/detail.module.css';
 
 import MyContext from "../../store/context";
 import { useContext} from "react";
@@ -17,7 +17,7 @@ const data = detailData?.filter((posts:any)=>posts.title === filteredId);
     return (
         <section>
             <h2 className={style.pageName}>Post Detail Page</h2>
-                    {data?.map((posts:any)=><TitleDetail key={posts.title} 
+                    {data?.map((posts:any)=><DetailPage key={posts.title} 
                     title={posts.title} 
                     titleDesc={posts.titleDesc}
                     image = {posts.image} 

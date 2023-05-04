@@ -14,8 +14,8 @@ const NavigationPage = (props : any)=>{
             </div>
             <nav className={styles.nav}>
                 <ul>
-                    <li><Link href ="/posts">posts</Link></li>
-                    <li><Link href ="/contact">contact</Link></li>
+                    <li><Link href ="/posts">All-posts</Link></li>
+                    <li><Link href ="/contact">Contact</Link></li>
                 </ul>
             </nav>
         </header>
