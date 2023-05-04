@@ -1,34 +1,48 @@
 import DetailPage from "../../components/detail/detail-page";
 import style from '../../components/detail/detail.module.css';
 
-import MyContext from "../../store/context";
-import { useContext} from "react";
-import { useRouter } from "next/router";
+import { getPostData, getPostFiles } from "../../helper/utill";
 
 const PostDetailPage = (props:any)=>{
 
-    const router = useRouter();
-    const detailData = useContext(MyContext);
+//     const router = useRouter();
+//     const detailData = useContext(MyContext);
 
-    const filteredId = router.query.slug;
+//     const filteredId = router.query.slug;
 
-const data = detailData?.filter((posts:any)=>posts.title === filteredId);
+// const data = detailData?.filter((posts:any)=>posts.title === filteredId);
+const {data} = props;
 
     return (
         <section>
             <h2 className={style.pageName}>Post Detail Page</h2>
-                    {data?.map((posts:any)=><DetailPage key={posts.title} 
-                    title={posts.title} 
-                    titleDesc={posts.titleDesc}
-                    image = {posts.image} 
-                    desc={posts.desc}
-                    desc2={posts.desc2}
-                    address={posts.address}
-                    date={posts.date}
-                    />)}
+            <DetailPage postData = {data}/>
         </section>
     )
 }
 
 export default PostDetailPage;
 
+export const getStaticProps = (context : any) => {
+    const {params} = context;
+    const {slug} = params;
+    const postData = getPostData(slug);
+
+    return {
+        props : {
+            data : postData
+        },
+        revalidate : 600
+    };
+}
+
+export const getStaticPaths = ()=>{
+    const postTitleName = getPostFiles();
+
+    const titles = postTitleName.map((titleName:any) => titleName.replace(/\.md$/,''));
+
+    return {
+        paths : titles.map((slug:any)=>({ params : {slug : slug}})),
+        fallback : false
+    }
+}

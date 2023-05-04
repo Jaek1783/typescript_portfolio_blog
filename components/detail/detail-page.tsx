@@ -4,7 +4,7 @@ import Link from "next/link";
 import {useRouter} from 'next/router';
 const DetailPage = (props : any)=>{
     const router = useRouter();
-    const {title, titleDesc, image, desc, desc2, address, date } = props;
+    const {title, titleDesc, image, desc, desc2, address, date } = props.postData;
 
   const imagePath = `/images/posts/${title}/${image}`;
 
