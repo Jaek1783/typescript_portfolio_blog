@@ -1,4 +1,4 @@
-import AllPosts from "../../components/all-posts/all-posts";
+import AllPosts from "../../components/Aposts/all-posts";
 import { getAllPosts } from "../../helper/utill";
 
 const AllPostsPage = (props:any)=>{
