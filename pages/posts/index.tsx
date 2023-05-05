@@ -1,7 +1,6 @@
 import AllPosts from "../../components/all-posts/all-posts";
 import { getAllPosts } from "../../helper/utill";
-import MyContext from "../../store/context";
-import { useContext } from "react";
+
 const AllPostsPage = (props:any)=>{
 // const data = useContext(MyContext);
 const {data} = props;
@@ -22,6 +21,6 @@ export const getStaticProps = ()=>{
         props : {
             data : allPosts
         },
-        revailidats :600
+        revalidate :600
     }
 }

@@ -5,12 +5,6 @@ import { getPostData, getPostFiles } from "../../helper/utill";
 
 const PostDetailPage = (props:any)=>{
 
-//     const router = useRouter();
-//     const detailData = useContext(MyContext);
-
-//     const filteredId = router.query.slug;
-
-// const data = detailData?.filter((posts:any)=>posts.title === filteredId);
 const {data} = props;
 
     return (

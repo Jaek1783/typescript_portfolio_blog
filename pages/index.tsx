@@ -4,6 +4,7 @@ import Project from '../components/myProjext/my-project';
 import { Fragment } from "react";
 import { getFavoritePosts } from "../helper/utill";
 const HomePage = (props : any)=>{
+    const {posts} = props;
     //자기소개
     //사용가능 기술
     //프로젝트
@@ -11,7 +12,7 @@ const HomePage = (props : any)=>{
         <Fragment>
             <Hero/>
             {/* <Skill/> */}
-            <Project posts = {props.posts}/>
+            <Project posts = {posts}/>
         </Fragment>
     )
 }
