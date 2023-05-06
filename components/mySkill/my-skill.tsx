@@ -7,7 +7,12 @@ const MySkillList = (props : any)=>{
     const skillList : {id : number, image : string}[]
      = [
         {id: 1, image : 'html5.png'},
-        {id : 2, image : 'css3.png'}
+        {id : 2, image : 'css3.png'},
+        {id : 3, image : 'javascript.png'},
+        {id : 4, image : 'typescript.png'},
+        {id : 5, image : 'react.png'},
+        {id : 6, image : 'nextjs.png'},
+        {id : 7, image : 'mysql.png'},
     ]
 
 ;    return(
