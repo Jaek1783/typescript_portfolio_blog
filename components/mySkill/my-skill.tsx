@@ -17,6 +17,7 @@ const MySkillList = (props : any)=>{
         {id : 5, image : 'react'},
         //<a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Kiranshastry - Flaticon</a>
         {id : 6, image : 'next'},
+        {id : 6, image : 'mongodb'},
         {id : 7, image : 'mysql'},
     ]
 
