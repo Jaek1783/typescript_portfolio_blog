@@ -3,7 +3,7 @@ import styles from './skills.module.css';
 const SkillGrid = (props : any)=>{
 const {skills, htmlSrc} = props;
     return <ul className={styles.box}>
-        {skills.map((skill:any) => <SkillItem key={skill.id} title={skill.title} image={skill.image}/>)}
+        {skills.map((skill:any) => <SkillItem key={skill.id} image={skill.image}/>)}
     </ul>
 }
 
