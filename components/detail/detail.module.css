@@ -31,7 +31,7 @@
     margin-top: 1rem;
 }
 .date{
-    text-align: right;
+    /* text-align: right; */
     padding:1rem;
 }
 .title{
@@ -41,7 +41,7 @@
 .title>dt{
     font-size:4rem;
     font-weight: bold;
-    text-align: left;
+    /* text-align: left; */
     padding-bottom:2rem;
 }
 

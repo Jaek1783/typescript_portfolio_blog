@@ -1,0 +1,10 @@
+[
+   {"id" : "1", "title" : "HTML5", "image" : "html"},
+   {"id" : "2", "title" : "CSS3", "image" : "css"},
+   {"id" : "3", "title" : "Javascript", "image" : "js"},
+   {"id" : "4", "title" : "Typescript", "image" : "ts"},
+   {"id" : "5", "title" : "React", "image" : "rt"},
+   {"id" : "6", "title" : "Next-js", "image" : "next"},
+   {"id" : "7", "title" : "MongoDB", "image" : "mongodb"},
+   {"id" : "8", "title" : "MySQL", "image" : "mysql"}
+]

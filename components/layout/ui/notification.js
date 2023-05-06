@@ -1,5 +1,3 @@
-import ReactDOM from 'react-dom';
-
 import classes from './notification.module.css';
 
 function Notification(props) {
@@ -24,5 +22,4 @@ function Notification(props) {
     </div>
   );
 }
-
 export default Notification;

@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #757575;
   padding: 0 .5rem;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -13,6 +12,7 @@
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   color: #333;
+  background-color:#757575;
 }
 
 .notification p {

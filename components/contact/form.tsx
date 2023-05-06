@@ -14,7 +14,6 @@ const Form = ()=>{
         const body = contactDetails
         
         const response = await axios.post('/api/contact',body);
-        console.log(response);
         const data = await response.data;
 
         if(!response){
@@ -64,7 +63,7 @@ if(requestStatus === 'pending'){
 
 if(requestStatus === 'success'){
     notification = {
-        status : 'Success',
+        status : 'success',
         title : 'Success',
         message : 'Message sent successfully' 
     }
