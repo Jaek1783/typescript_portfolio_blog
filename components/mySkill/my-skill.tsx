@@ -14,7 +14,7 @@ const MySkillList = (props : any)=>{
         //<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
         {id : 4, title:'Typescript', image : 'ts'},
         //<a href="https://www.flaticon.com/free-icons/typescript" title="typescript icons">Typescript icons created by Freepik - Flaticon</a>
-        {id : 5, title:'React', image : 'react'},
+        {id : 5, title:'React', image : 'rt'},
         //<a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Kiranshastry - Flaticon</a>
         {id : 6, title:'Next-js', image : 'next'},
         {id : 6, title:'MongoDB', image : 'mongodb'},
