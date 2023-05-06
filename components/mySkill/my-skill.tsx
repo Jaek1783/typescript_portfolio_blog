@@ -1,18 +1,19 @@
 import SkillGrid from "./skill-grid";
 import styles from './skills.module.css';
-import axios from "axios";
-import { useState ,useEffect} from "react";
 
 const MySkillList = (props : any)=>{
-    const [skillData, setSkillData] = useState([]);
-useEffect(()=>{
-    axios.get('./skills.json')
-    .then((response:any)=>setSkillData(response.data));
-},[]);
+
+    
+    const skillList : {id : number, image : string}[]
+     = [
+        {id: 1, image : 'html5.png'},
+        {id : 2, image : 'css3.png'}
+    ]
+
 ;    return(
         <section className={styles.container}>
             <h2>My Skill List</h2>
-            <SkillGrid skills = {skillData}/>
+            <SkillGrid skills = {skillList}/>
         </section>
     )
 }

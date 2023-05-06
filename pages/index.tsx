@@ -11,7 +11,7 @@ const HomePage = (props : any)=>{
     return(
         <Fragment>
             <Hero/>
-            {/* <Skill/> */}
+            <Skill/>
             <Project posts = {posts}/>
         </Fragment>
     )
