@@ -9,9 +9,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   type SKILL = {id : number, title : string, image : string};
 
   const [data, setData] = useState<SKILL[]>([]);
-  let responseData;
-useEffect(()=>{
 
+useEffect(()=>{
     axios.get('/skillData.json')
     .then((response:AxiosResponse<SKILL[]>)=>{
       setData(response.data);

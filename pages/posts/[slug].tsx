@@ -2,8 +2,11 @@ import DetailPage from "../../components/detail/detail-page";
 import style from '../../components/detail/detail.module.css';
 
 import { getPostData, getPostFiles } from "../../helper/utill";
+import {NextPage,InferGetStaticPropsType, GetStaticPaths } from 'next';
 
-const PostDetailPage = (props:any)=>{
+type PostPageProps = InferGetStaticPropsType<typeof getStaticProps>;
+
+const PostDetailPage: NextPage<PostPageProps> = (props : PostPageProps)=>{
 
 const {data} = props;
 
@@ -30,13 +33,13 @@ export const getStaticProps = (context : any) => {
     };
 }
 
-export const getStaticPaths = ()=>{
-    const postTitleName = getPostFiles();
+export const getStaticPaths: GetStaticPaths = async ()=>{
+    const postTitleName = await getPostFiles();
 
-    const titles = postTitleName.map((titleName:any) => titleName.replace(/\.md$/,''));
+    const titles = await postTitleName.map((titleName) => titleName.replace(/\.md$/,''));
 
     return {
-        paths : titles.map((slug:any)=>({ params : {slug : slug}})),
+        paths : titles.map((slug)=>({ params : {slug : slug}})),
         fallback : false
     }
 }

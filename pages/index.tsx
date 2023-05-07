@@ -3,7 +3,11 @@ import Skill from "../components/mySkill/my-skill";
 import Project from '../components/myProjext/my-project';
 import { Fragment } from "react";
 import { getFavoritePosts } from "../helper/utill";
-const HomePage = (props : any)=>{
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
+
+type HomePageProps = InferGetStaticPropsType<typeof getStaticProps>;
+const HomePage : NextPage<HomePageProps> = (props : HomePageProps)=>{
+
     const {posts} = props;
     //자기소개
     //사용가능 기술
@@ -19,7 +23,7 @@ const HomePage = (props : any)=>{
 
 export default HomePage;
 
-export const getStaticProps = ()=>{
+export const getStaticProps:GetStaticProps = async ()=>{
     const favoritePosts = getFavoritePosts();
     return {
         props : {
