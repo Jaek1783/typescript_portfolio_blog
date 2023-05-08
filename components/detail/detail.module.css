@@ -20,7 +20,7 @@
     border-bottom: 1px solid #000;;
 }
 .designTitle{
-    font-size: 6rem;
+    font-size: 400%;
     font-weight:bold;
     border-bottom:3px dotted #000;
 }
@@ -39,7 +39,7 @@
 }
 
 .title>dt{
-    font-size:4rem;
+    font-size:300%;
     font-weight: bold;
     /* text-align: left; */
     padding-bottom:2rem;

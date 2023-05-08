@@ -1,5 +1,13 @@
 import {createContext} from 'react';
-type SKILL = {id : number, title : string, image : string};
+export type SKILL
+ = {
+    id : number, 
+    title : string, 
+    image : string, 
+    desc01 : string, 
+    desc02 : string,
+    desc03 : string
+};
 const MyContext = createContext<SKILL[]>([]);
 //초기값
 export default MyContext;

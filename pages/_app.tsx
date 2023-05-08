@@ -5,8 +5,9 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import MyContext from '../store/context';
 import axios, {AxiosResponse} from 'axios';
+import type { SKILL } from '../store/context';
+
 export default function MyApp({ Component, pageProps }: AppProps) {
-  type SKILL = {id : number, title : string, image : string};
 
   const [data, setData] = useState<SKILL[]>([]);
 

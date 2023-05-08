@@ -44,6 +44,9 @@
 }
 
 .ModalContainer{
+    width:45%;
+    min-width: 400px;
+    height:30rem;
     background-color:transparent;
     display: flex;
     justify-content: center;
@@ -51,13 +54,26 @@
 }
 
 .ModalCard{
+    width:100%;
     padding:1rem;
     border-radius: 2%;
     background-color: #c9c9c9;
     display: flex;
+    color:#000;
 }
 
-.ModalCard p{
-    color:#000;
+.ModalCard>dl{
+    padding-right:1rem;
+    border-right:#000 1px solid;
+}
+.ModalCard dd{
+    font-size: 2rem;
     font-weight: bold;
+}
+
+.desc li{
+    padding-left:1rem;
+    padding-bottom:.5rem;
+    text-align: left;
+    font-size: 1.2rem;
 }

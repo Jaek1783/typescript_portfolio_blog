@@ -26,6 +26,7 @@ const DetailPage = (props : any)=>{
                                 alt={title} 
                                 width={500} 
                                 height={250}
+                                layout="responsive"
                                 />
                             </dd>
                             <dd>

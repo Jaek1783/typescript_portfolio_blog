@@ -1,7 +1,7 @@
 import SkillGrid from "../components/mySkill/skill-grid";
 import styles from '../components/mySkill/skills.module.css';
 import MyContext from "../store/context";
-
+import { SKILL } from "../store/context";
 import { useContext } from "react";
 
 const MySkillList = (props : any)=>{
