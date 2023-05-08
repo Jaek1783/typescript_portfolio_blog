@@ -42,3 +42,22 @@
 .item:hover img{
     opacity: 0.3;
 }
+
+.ModalContainer{
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ModalCard{
+    padding:1rem;
+    border-radius: 2%;
+    background-color: #c9c9c9;
+    display: flex;
+}
+
+.ModalCard p{
+    color:#000;
+    font-weight: bold;
+}

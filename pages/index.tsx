@@ -1,9 +1,11 @@
 import Hero from "../components/hero/hero";
-import Skill from "../components/mySkill/my-skill";
+import Skill from "./skills";
 import Project from '../components/myProjext/my-project';
+
 import { Fragment } from "react";
 import { getFavoritePosts } from "../helper/utill";
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
+
 
 type HomePageProps = InferGetStaticPropsType<typeof getStaticProps>;
 const HomePage : NextPage<HomePageProps> = (props : HomePageProps)=>{
