@@ -6,10 +6,9 @@ import ReactModal from "react-modal";
 
 const SkillGrid = (props : any)=>{
     const router = useRouter();
-    console.log(router.query);
     const {skills} = props;
     ReactModal.setAppElement("#__next");
-// console.log(skills);
+
     return <ul className={styles.box}>
         {skills.map((skill:any) => <SkillItem key={skill.id} id={skill.id} title={skill.title} image={skill.image} desc01={skill.desc01}/>)}
 

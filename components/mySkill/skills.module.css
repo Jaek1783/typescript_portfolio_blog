@@ -46,7 +46,6 @@
 .ModalContainer{
     width:45%;
     min-width: 400px;
-    height:30rem;
     background-color:transparent;
     display: flex;
     justify-content: center;

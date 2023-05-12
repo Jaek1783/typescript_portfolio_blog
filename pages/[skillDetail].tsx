@@ -14,7 +14,7 @@ const SkillModalPage = (props : any)=>{
 
 return <div className={styles.ModalCard}>
     <dl>
-        <dt>{skillDetail ? <Image src={imagePath} alt = {`${skillDetail}`} width={300} height={300} layout='responsive'/> : ''}</dt>
+        <dt>{skillDetail ? <Image src={imagePath} alt = {`${skillDetail}`} width={100} height={100}/> : ''}</dt>
         <dd>{skillDetail ? `${result[0].title}` : '' }</dd>
     </dl>
     <ul className={styles.desc}>
