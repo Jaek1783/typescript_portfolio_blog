@@ -11,7 +11,7 @@
 
 .container{
     width:80%;
-    background-color: #afa9a2;
+    background-color: #67e8162c;
     color:#000;
     margin:0 auto;
     padding:2rem;
@@ -25,10 +25,7 @@
     border-bottom:3px dotted #000;
 }
 .image{
-    border:1px dotted #000;
-    background-color: #3e3e3e;
-    padding:1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .date{
     /* text-align: right; */
@@ -36,19 +33,10 @@
 }
 .title{
     padding:1rem;
-}
-
-.title>dt{
     font-size:300%;
     font-weight: bold;
-    /* text-align: left; */
     padding-bottom:2rem;
-}
-
-.title>dd{
-    font-size: 2rem;
     text-align: left;
-    font-weight: bold;
 }
 
 .desc{
@@ -65,7 +53,12 @@
 
 .back{
     text-align: left;
+    color:#fff;
 }
 .back:hover{
     cursor: pointer;
+}
+
+.back>span{
+    padding-right: .5rem;
 }

@@ -1,5 +1,5 @@
 .btn{
-    background-color: #585858;
+    background-color: rgba(255, 255, 255, 0.552);
     border:none;
     /* border-radius: 10px; */
     padding:10px;
@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     margin:1rem;
-    box-shadow: 1px 1px 5px 1px #2e2e2e;
+    box-shadow: 1px 1px 5px 1px #ffffff75;
 }
 .btn:hover{
     cursor: pointer;

@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    color:#fff;
 }
 
 .contact>h2{
@@ -16,9 +17,9 @@
     clip: rect(0,0,0,0);
 }
 .formbox{
-    background-color: #757575;
+    background-color:#67e8168f;
     padding:1rem;
-    box-shadow: 3px 3px 8px 3px #242424;
+    box-shadow: 3px 3px 8px 3px #ffffff75;
 }
 
 .formbox>p{
@@ -42,6 +43,8 @@
 .control>input,.textbox>textarea{
     padding:.5rem;
     width:100%;
+    background-color: #ffffffa9;
+    border:none;
 }
 .textbox>textarea{
     height:20rem;

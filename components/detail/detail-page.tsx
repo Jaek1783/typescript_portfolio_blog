@@ -12,14 +12,17 @@ const DetailPage = (props : any)=>{
     return<dl className={style.container}>
             <dt>
                 <p className={style.back} onClick={()=>router.back()}>
+                    <span>
                     <Image 
                     src="/images/icon/arrow.png" 
                     alt="arrow" 
                     width={15} 
                     height={15}
-                />돌아가기</p>
+                />
+                    </span>
+                    돌아가기</p>
                     <dl className={style.box}>
-                        <dt className={style.designTitle}>PORTFOLIO</dt>
+                        <dt className={style.designTitle}>{title}</dt>
                             <dd className={style.image}>
                                 <Image 
                                 src={imagePath} 
@@ -29,12 +32,7 @@ const DetailPage = (props : any)=>{
                                 layout="responsive"
                                 />
                             </dd>
-                            <dd>
-                                <dl className={style.title}>
-                                    <dt>{title}</dt>
-                                    <dd>{titleDesc}</dd>
-                                </dl>
-                            </dd>
+                            <p className={style.title}>{titleDesc}</p>
                     </dl>
                 </dt>
                 <dd className={style.date}>제작기간 : {date}</dd>

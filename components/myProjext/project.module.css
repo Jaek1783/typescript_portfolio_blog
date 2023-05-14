@@ -1,18 +1,15 @@
 .container{
-    /* width:58%; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .card{
     width:18rem;
-    /* border : 10px solid #b2b2b2; */
-    /* border-radius: 10px; */
-    background-color: #939393;
-    margin:1rem;
+    background-color: rgba(255, 255, 255, 0.552);
+    margin:1rem 5rem;
     padding:1rem 0 0 ;
     overflow: hidden;
-    box-shadow: 5px 5px 8px 5px #2e2e2e;
+    box-shadow: 5px 5px 8px 5px #ffffff75;
 }
 .text{
     border-top : 1px solid #000;

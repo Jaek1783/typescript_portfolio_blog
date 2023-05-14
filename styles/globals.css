@@ -5,8 +5,10 @@
 }
 body{
     /* min-width: 520px; */
-    background-color: #454545;
-    color:#fff;
+    /* background-color: #454545; */
+    /* color:#fff; */
+    background: no-repeat center url('../public/images/background.jpg');
+    background-attachment: fixed;
 }
 
 a{

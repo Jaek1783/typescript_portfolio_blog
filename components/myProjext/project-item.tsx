@@ -6,8 +6,9 @@ import Link from "next/link";
 const ProjectItem = (props:any)=>{
     const {title, titleDesc, image } = props.projects;
     const imagePath = `/images/posts/${title}/${image}`;
-
+    const linkPath = `/posts/${title}`;
     return <li className={style.card}>
+        <Link href={linkPath}>
             <dl>
                 <dt><Image src={imagePath} alt={title} width={220} height={150} /></dt>
                 <dd className={style.text}>
@@ -17,7 +18,8 @@ const ProjectItem = (props:any)=>{
                     </dl>
                 </dd>
             </dl>
-        <Button title={title}/>
+        </Link>
+        {/* <Button title={title}/> */}
         </li>
 }
 

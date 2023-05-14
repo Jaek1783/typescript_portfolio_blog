@@ -8,7 +8,7 @@
    --s: 180px; /* image size */
   --b: 5px; /* border thickness */
   --c: #f0dd30; /* border color */
-  --cb: #656565; /* background color */
+   --cb: transparent; /* background color */
   --f: 1; /* initial scale */
   
   width: var(--s);
@@ -34,4 +34,18 @@
   }
   .me>img:hover {
     --f: 1.15; /* hover scale */
+    cursor:default;
+  }
+
+  .introText{
+    width:50%;
+    margin:0 auto;
+    background-color:#67e8168f;
+    margin:5rem auto;
+    padding:2rem;
+    box-shadow: 5px 5px 8px 5px #ffffff75;
+  }
+  .introText>p{
+    text-align: left;
+    padding-bottom:1rem;
   }
