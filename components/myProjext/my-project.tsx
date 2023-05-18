@@ -1,14 +1,15 @@
-
+import { NextPage } from 'next';
+import { GetProjectType } from '../../helper/utill';
 import ProjectGrid from './project-grid';
 
-const AllMyProject = (props : any)=>{
+const AllMyProject : NextPage<GetProjectType> = (props)=>{
 
-    const {posts} = props;
+    const {data} = props;
 
     return(
         <section>
             <h2>My Project List</h2>
-            <ProjectGrid projects = {posts}/>
+            <ProjectGrid data = {data}/>
         </section>
     )
 }

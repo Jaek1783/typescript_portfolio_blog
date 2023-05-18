@@ -1,10 +1,14 @@
+import { GetProjectType, ProjectType } from "../../helper/utill";
 import Image from "next/image";
 import style from './project.module.css';
-import Button from "../layout/Button";
 import Link from "next/link";
+import { NextPage } from "next";
 
-const ProjectItem = (props:any)=>{
-    const {title, titleDesc, image } = props.projects;
+interface ProjectItemProps {
+    data : ProjectType;
+}
+const ProjectItem : NextPage<ProjectItemProps> = ({data})=>{
+    const {title, titleDesc, image } = data;
     const imagePath = `/images/posts/${title}/${image}`;
     const linkPath = `/posts/${title}`;
     return <li className={style.card}>

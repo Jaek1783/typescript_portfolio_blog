@@ -2,13 +2,19 @@ import styles from '../components/mySkill/skills.module.css';
 import Image from 'next/image';
 import {useRouter} from 'next/router';
 import { useContext } from 'react';
-import MyContext from '../store/context';
+import MyContext, { SKILL } from '../store/context';
+import { NextPage } from 'next';
 
-const SkillModalPage = (props : any)=>{
-    const skills = useContext(MyContext);
+interface SkillModalPageProps {
+    data : SKILL[];
+}
+const SkillModalPage:NextPage<SkillModalPageProps> = ({data})=>{
+    // const skills = useContext(MyContext);
+    console.log(data);
     const router = useRouter();
     const {skillDetail} = router.query;
-    const result = skills.filter(data => data.image === skillDetail);
+    const result = data?.filter(skills => skills.image === skillDetail);
+    
 
     const imagePath = `/images/skills/${skillDetail}.png`;
 

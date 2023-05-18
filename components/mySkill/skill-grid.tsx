@@ -3,14 +3,15 @@ import styles from './skills.module.css';
 import {useRouter} from "next/router";
 import SkillModalPage from "../../pages/[skillDetail]";
 import ReactModal from "react-modal";
+import { NextPage } from "next";
+import { SkillProps } from "../../store/context";
 
-const SkillGrid = (props : any)=>{
+const SkillGrid : NextPage<SkillProps>= ({data})=>{
     const router = useRouter();
-    const {skills} = props;
     ReactModal.setAppElement("#__next");
 
     return <ul className={styles.box}>
-        {skills.map((skill:any) => <SkillItem key={skill.id} id={skill.id} title={skill.title} image={skill.image} desc01={skill.desc01}/>)}
+        {data?.map((skill:any) => <SkillItem key={skill.id} id={skill.id} title={skill.title} image={skill.image} desc01={skill.desc01}/>)}
 
         <ReactModal 
                   isOpen={!!router.query.skillDetail}
@@ -26,7 +27,7 @@ const SkillGrid = (props : any)=>{
                     }
                   }}
                 >
-                    <SkillModalPage/>
+                    <SkillModalPage data={data} />
         </ReactModal>
     </ul>
 }

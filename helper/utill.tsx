@@ -29,7 +29,7 @@ export const getPostData = (projectTitle : string) =>{
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const {data, content} = matter(fileContent);
 
-    const postData = {
+  const postData = {
         slug : postSlug,
         address: data.address,
         date: data.date,

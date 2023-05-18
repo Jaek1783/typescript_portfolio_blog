@@ -1,6 +1,11 @@
 import {createContext} from 'react';
-export type SKILL
- = {
+
+export interface SkillProps{
+    data : SKILL[];
+}
+
+export interface SKILL
+  {
     id : number, 
     title : string, 
     image : string, 

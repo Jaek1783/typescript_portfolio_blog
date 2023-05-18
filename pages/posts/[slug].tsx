@@ -1,12 +1,10 @@
 import DetailPage from "../../components/detail/detail-page";
 import style from '../../components/detail/detail.module.css';
 
-import { getPostData, getPostFiles } from "../../helper/utill";
-import {NextPage,InferGetStaticPropsType, GetStaticPaths } from 'next';
+import { getPostData, getPostFiles, GetProjectType, ProjectType } from "../../helper/utill";
+import {NextPage,InferGetStaticPropsType, GetStaticPaths, GetStaticProps, GetStaticPathsContext, GetStaticPropsContext } from 'next';
 
-type PostPageProps = InferGetStaticPropsType<typeof getStaticProps>;
-
-const PostDetailPage: NextPage<PostPageProps> = (props : PostPageProps)=>{
+const PostDetailPage: NextPage<GetProjectType> = (props)=>{
 
 const {data} = props;
 
@@ -20,9 +18,20 @@ const {data} = props;
 
 export default PostDetailPage;
 
-export const getStaticProps = (context : any) => {
+interface Props {
+    data : ProjectType;
+}
+
+export const getStaticProps:GetStaticProps<Props> = (context : GetStaticPropsContext) => {
     const {params} = context;
-    const {slug} = params;
+    const slug = params?.slug as string | undefined;
+    // Ensure slug is of type string or undefined
+  
+    if (!slug) {
+      return {
+        notFound: true
+      };
+    }
     const postData = getPostData(slug);
 
     return {

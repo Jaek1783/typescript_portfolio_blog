@@ -1,9 +1,13 @@
+import { NextPage } from "next";
+import { GetProjectType, ProjectType } from "../../helper/utill";
 import ProjectItem from "./project-item";
-import stlye from './project.module.css';
-const ProjectGrid = (props : any)=>{
-const {projects} = props;
-    return <ul className={stlye.container}>
-        {projects.map((project:any) => <ProjectItem key={project.title} projects={project}/>)}
+import style from './project.module.css';
+
+const ProjectGrid : NextPage<GetProjectType> = (props)=>{
+const {data} = props;
+
+    return <ul className={style.container}>
+        {data.map((project:ProjectType) => <ProjectItem key={project.title} data={project}/>)}
     </ul>
 }
 
