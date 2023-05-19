@@ -11,8 +11,8 @@
   left: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  color: #333;
-  background-color:#757575;
+  color: #ffffff;
+  background-color:#204f0d;
 }
 
 .notification p {
@@ -20,7 +20,8 @@
 }
 
 .success {
-  background-color:#46fe1d;
+  background-color:#ffffff;
+  color:#204f0d;
 }
 
 .error {

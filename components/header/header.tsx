@@ -1,10 +1,14 @@
 import Image from 'next/image';
 import styles from './header.module.css';
 import Link from 'next/link';
+import { NextPage } from 'next';
 
-const NavigationPage = (props : any)=>{
+interface HeaderProps {
+    scrollValue : number;
+}
+const NavigationPage:NextPage<HeaderProps> = ({scrollValue})=>{
     return(
-        <header className={styles.header}>
+        <header className={scrollValue < 60 ? styles.header: styles.headerScroll}>
             <h1 className={styles.logo}><Link href="/">Portfolio</Link></h1>
             <div className={styles.link}>
                 <ul>

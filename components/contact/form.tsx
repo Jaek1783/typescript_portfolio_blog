@@ -3,14 +3,21 @@ import btnStlye from '../layout/btn.module.css';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
 import Notification from '../layout/ui/notification';
-const Form = ()=>{
-    const [emailValue, setEmailValue] = useState('');
-    const [nameValue, setNameValue] = useState('');
-    const [descValue, setDescValue] = useState('');
-    const [requestStatus, setRequestStatus] = useState('');
-    const [errMsg, setErrMsg] = useState('');
+import { NextPage } from 'next';
+
+interface ContaxtDataProps{
+    email : string;
+    name : string;
+    desc : string;
+}
+const Form:NextPage<ContaxtDataProps> = ()=>{
+    const [emailValue, setEmailValue] = useState<string>('');
+    const [nameValue, setNameValue] = useState<string>('');
+    const [descValue, setDescValue] = useState<string>('');
+    const [requestStatus, setRequestStatus] = useState<string>('');
+    const [errMsg, setErrMsg] = useState<string>('');
     
-    const sendContactData = async (contactDetails : any)=>{
+    const sendContactData = async (contactDetails:ContaxtDataProps)=>{
         const body = contactDetails
         
         const response = await axios.post('/api/contact',body);
@@ -31,7 +38,7 @@ const Form = ()=>{
         }
     },[requestStatus]);
 
-    const sendMessageHandler = async (event : any)=>{
+    const sendMessageHandler = async (event:React.FormEvent<HTMLFormElement>)=>{
         event.preventDefault();
 
         setRequestStatus('pending');
@@ -43,8 +50,8 @@ const Form = ()=>{
                 desc : descValue
             });
             setRequestStatus('success');
-        }catch(error:any){
-            setErrMsg(error.message);
+        }catch(error){
+            setErrMsg(( error as Error).message);
             setRequestStatus('error');
         }
         setEmailValue('');
@@ -56,7 +63,7 @@ let notification;
 if(requestStatus === 'pending'){
     notification = {
         status : 'pending',
-        title : 'Sending message...',
+        title : '메시지를 보내는 중입니다.',
         message : 'Your message is on its way!' 
     }
 }
@@ -64,14 +71,14 @@ if(requestStatus === 'pending'){
 if(requestStatus === 'success'){
     notification = {
         status : 'success',
-        title : 'Success',
+        title : '메시지를 보내는 데 성공하셨습니다.',
         message : 'Message sent successfully' 
     }
 }
 if(requestStatus === 'error'){
     notification = {
         status : 'Error',
-        title : 'Error',
+        title : '에러를 확인하시기 바랍니다',
         message : errMsg 
     }
 }

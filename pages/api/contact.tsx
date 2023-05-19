@@ -1,4 +1,3 @@
-import axios from "axios";
 import {MongoClient} from 'mongodb';
 
 const handler = async (req : any,res : any)=>{

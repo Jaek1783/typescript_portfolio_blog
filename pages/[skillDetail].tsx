@@ -1,8 +1,7 @@
 import styles from '../components/mySkill/skills.module.css';
 import Image from 'next/image';
 import {useRouter} from 'next/router';
-import { useContext } from 'react';
-import MyContext, { SKILL } from '../store/context';
+import { SKILL } from '../store/context';
 import { NextPage } from 'next';
 
 interface SkillModalPageProps {
@@ -10,7 +9,6 @@ interface SkillModalPageProps {
 }
 const SkillModalPage:NextPage<SkillModalPageProps> = ({data})=>{
     // const skills = useContext(MyContext);
-    console.log(data);
     const router = useRouter();
     const {skillDetail} = router.query;
     const result = data?.filter(skills => skills.image === skillDetail);

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import style from './hero.module.css';
 const Hero = ()=>{
+
     return(
         <section className={style.intro}>
             <div className={style.box}>
                 <div className={style.me}>
-                    <Image src="/images/me.png" alt="me"width={250} height ={300} priority={true}/>
+                    <Image src="/images/me.png" alt="me"width={250} height ={240} priority={true}/>
                 </div>
                 <h1>언제나 꿈틀대는 지렁이형입니다.</h1>
                 <span>frontend develoment</span>

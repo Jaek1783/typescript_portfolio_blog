@@ -1,8 +1,15 @@
 .header{
     width:100%;
-    /* height:20rem; */
     padding:1rem 0;
     background-color: #67e8162c;
+    position: fixed;
+    z-index: 999;
+    color:#fff;
+}
+.headerScroll{
+    width:100%;
+    padding:1rem 0;
+    background-color: #35700f;
     position: fixed;
     z-index: 999;
     color:#fff;

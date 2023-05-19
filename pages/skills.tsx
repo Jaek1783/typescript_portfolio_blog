@@ -3,7 +3,6 @@ import SkillGrid from "../components/mySkill/skill-grid";
 import styles from '../components/mySkill/skills.module.css';
 
 import { SKILL } from "../store/context";
-import { useContext } from "react";
 
 interface SkillProps {
     skillsData : SKILL[];

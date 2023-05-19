@@ -1,10 +1,16 @@
 import { Fragment } from "react";
 import Header from '../header/header';
-const Layout = (props : any)=>{
+import { NextPage } from "next";
+
+interface LayoutProps {
+    scrollValue : number;
+    children : any;
+}
+const Layout: NextPage<LayoutProps> = ({scrollValue, children})=>{
     return(
         <Fragment>
-            <Header/>
-            <main>{props.children}</main>
+            <Header scrollValue = {scrollValue}/>
+            <main>{children}</main>
         </Fragment>
     )
 }

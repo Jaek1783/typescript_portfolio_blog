@@ -2,7 +2,7 @@ import DetailPage from "../../components/detail/detail-page";
 import style from '../../components/detail/detail.module.css';
 
 import { getPostData, getPostFiles, GetProjectType, ProjectType } from "../../helper/utill";
-import {NextPage,InferGetStaticPropsType, GetStaticPaths, GetStaticProps, GetStaticPathsContext, GetStaticPropsContext } from 'next';
+import {NextPage,GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 
 const PostDetailPage: NextPage<GetProjectType> = (props)=>{
 

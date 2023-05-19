@@ -7,7 +7,25 @@ import MyContext from '../store/context';
 import axios, {AxiosResponse} from 'axios';
 import type { SKILL } from '../store/context';
 
+interface scrollProps {
+  scrollValue : number
+}
 export default function MyApp({ Component, pageProps }: AppProps) {
+
+  const [scrollValue, setScrollValue] = useState<number>(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setScrollValue(scrollTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const [data, setData] = useState<SKILL[]>([]);
 
@@ -18,7 +36,7 @@ useEffect(()=>{
   });
 },[]);
   return (
-      <Layout>
+      <Layout scrollValue = {scrollValue}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </Head>
