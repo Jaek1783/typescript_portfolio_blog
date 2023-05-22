@@ -1,6 +1,6 @@
 import style from './form-style.module.css';
 import btnStlye from '../layout/btn.module.css';
-import {useState, useEffect} from 'react';
+import {useState, useEffect, ChangeEvent} from 'react';
 import axios from 'axios';
 import Notification from '../layout/ui/notification';
 import { NextPage } from 'next';
@@ -89,16 +89,16 @@ if(requestStatus === 'error'){
                     <div className={style.controls}>
                         <div className={style.control}>
                             <label htmlFor="email">Your Email</label>
-                            <input type="email" id="email" required value = {emailValue} onChange  = {(event : any) => setEmailValue(event.target.value)}/>
+                            <input type="email" id="email" required value = {emailValue} onChange  = {(event : ChangeEvent<HTMLInputElement>) => setEmailValue(event.target.value)}/>
                         </div>
                         <div className={style.control}>
                             <label htmlFor="name">Your Name</label>
-                            <input type="text" id="name" required value = {nameValue} onChange  = {(event : any) => setNameValue(event.target.value)}/>
+                            <input type="text" id="name" required value = {nameValue} onChange  = {(event : ChangeEvent<HTMLInputElement>) => setNameValue(event.target.value)}/>
                         </div>
                         </div>
                         <div className={style.textbox}>
                             <label htmlFor="message">Your Message</label>
-                            <textarea  id="message" value = {descValue} onChange  = {(event : any) => setDescValue(event.target.value)}></textarea>
+                            <textarea  id="message" value = {descValue} onChange  = {(event : ChangeEvent<HTMLTextAreaElement>) => setDescValue(event.target.value)}></textarea>
                         </div>
                     <div className={style.action}>
                         <button className={btnStlye.btn}>send</button>
