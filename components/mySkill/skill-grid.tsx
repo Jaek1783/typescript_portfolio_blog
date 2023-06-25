@@ -10,10 +10,12 @@ const SkillGrid : NextPage<SkillProps>= ({data})=>{
     const router = useRouter();
     ReactModal.setAppElement("#__next");
 
-    return <ul className={styles.box}>
+    return <div>
+      <ul className={styles.box}>
         {data?.map((skill:SKILL) => <SkillItem key={skill.id} id={skill.id} title={skill.title} image={skill.image} desc01={skill.desc01}/>)}
+    </ul>
 
-        <ReactModal 
+    <ReactModal 
                   isOpen={!!router.query.skillDetail}
                   className={styles.ModalContainer}
                   onRequestClose={()=> router.push('/')}
@@ -29,7 +31,7 @@ const SkillGrid : NextPage<SkillProps>= ({data})=>{
                 >
                     <SkillModalPage data={data} />
         </ReactModal>
-    </ul>
+    </div> 
 }
 
 export default SkillGrid;

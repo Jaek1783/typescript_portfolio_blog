@@ -1,12 +1,26 @@
-.container{
+.projectContainer{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
     flex-wrap: wrap;
+}
+@media screen and (min-width:640px) and (max-width:960px){
+    .container{
+        width:40rem;
+        display: flex;
+        justify-content:left;
+        flex-wrap: wrap;
+    }
 }
 .card{
     width:18rem;
     background-color: rgba(255, 255, 255, 0.552);
-    margin:1rem 5rem;
+    margin:1rem;
     padding:1rem 0 0 ;
     overflow: hidden;
     box-shadow: 5px 5px 8px 5px #ffffff75;

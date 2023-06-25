@@ -1,6 +1,6 @@
 .intro>.box{
   /* width:500px; */
-  margin:0 auto;
+  margin:3rem auto 0;
 }
 .me>img {
   /* width:auto;
@@ -38,7 +38,7 @@
   }
 
   .introText{
-    width:50%;
+    width:80%;
     margin:0 auto;
     background-color:#67e8168f;
     margin:5rem auto;
