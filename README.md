@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 프로젝트 통합 포트폴리오
+## 제작기간
+* 2023.03.20 ~ 상시 업데이트 중
+## 주소
+* https://typescript-portfolio-blog.vercel.app/
+## 이미지
+<img width="300" src="https://github.com/Jaek1783/typescript_portfolio_blog/assets/73649967/a67a0d40-1ae6-4140-a63c-1f8b07dd70a5" alt="포트폴리오이미지01"/> <img width="300" src="https://github.com/Jaek1783/typescript_portfolio_blog/assets/73649967/f8ff6b5d-7d34-4e74-ae79-c05bf4b3a36c" alt="포트폴리오이미지02"/> <img width="300" src="https://github.com/Jaek1783/typescript_portfolio_blog/assets/73649967/a70655fb-2be9-45de-a50b-836d2bfdba5f" alt="포트폴리오이미지03"/> <img width="300" src="https://github.com/Jaek1783/typescript_portfolio_blog/assets/73649967/8cd9519a-afc4-4fc9-9c22-4801563cb1e7" alt="포트폴리오이미지04"/> <img width="300"
+src="https://github.com/Jaek1783/typescript_portfolio_blog/assets/73649967/e1cc78fb-b779-46e6-9742-352dac23d6f0" alt="포트폴리오이미지05"/> <img width="300"
+src="https://github.com/Jaek1783/typescript_portfolio_blog/assets/73649967/1b08b374-515a-4697-a94a-e7a10d57d7cc" alt="포트폴리오이미지06"/>
 
-## Getting Started
+## 구성
+* 메인페이지 1개, 서브페이지 2개, 모달페이지 1개
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 사용 스킬
+* 리액트
+  * 리액트 훅(useState, useEffect, useRef, useContext)
+* 넥스트
+  * SSR (GetStaticProps, GetStaticPath, [slug])
+  * Typescript 연동을 위한 기능 (NextPage)
+* 타입스크립트
+  * 명시적 타입 선언
+  * export interface 사용
